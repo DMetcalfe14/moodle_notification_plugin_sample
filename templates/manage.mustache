@@ -1,0 +1,26 @@
+{{!
+
+}}
+{{!
+    @template local_notification/manage
+}}
+<h1>Notifications</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Notification</th>
+        <th>Type</th>
+        <th>Actions</th>
+    <tr>
+    {{#notifications}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{notificationtext}}</td>
+            <td>{{notificationtype}}</td>
+            <td><input type="button" class="btn btn-danger" value="Delete Notification" onclick="location.href='{{deleteurl}}?id={{id}}'"></td>
+        <tr>
+    {{/notifications}}
+</table>
+
+<hr>
+<input type="button" class="btn btn-primary" value="Create Notification" onclick="location.href='{{editurl}}'">
