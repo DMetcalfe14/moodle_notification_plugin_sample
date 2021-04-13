@@ -1,4 +1,5 @@
 # Local notification
+This is an old moodle plugin written to display system wide banner notifications.
 
 ## Functionality
 - Form for admins to add new notification
